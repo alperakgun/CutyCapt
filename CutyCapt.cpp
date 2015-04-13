@@ -268,7 +268,8 @@ CutyCapt::saveSnapshot() {
   // check for other events... This is primarily a problem
   // under my Ubuntu virtual machine.
 
-  mPage->setViewportSize( mainFrame->contentsSize() );
+  // ALPER AKGUN: that viewport is needed in order to get responsive images
+  // mPage->setViewportSize( mainFrame->contentsSize() );
 
   switch (mFormat) {
     case SvgFormat: {
