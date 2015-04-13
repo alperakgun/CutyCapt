@@ -38,7 +38,7 @@
 #include <QNetworkProxy>
 #include "CutyCapt.hpp"
 
-#if QT_VERSION >= 0x040600 && 0
+#if QT_VERSION >= 0x040600 && 1
 #define CUTYCAPT_SCRIPT 1
 #endif
 
@@ -646,7 +646,7 @@ main(int argc, char *argv[]) {
       QTextStream stream(&file);
       stream.setCodec(QTextCodec::codecForName("UTF-8"));
       stream.setAutoDetectUnicode(true);
-      scriptCode = stream.readAll();
+      scriptCode = stream.readAll();      
       file.close();
     }
   }
